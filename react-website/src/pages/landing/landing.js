@@ -5,7 +5,7 @@ class LandingPage extends Component {
   state = {};
 
   handleClick = () => {
-    this.props.history.push("/");
+    this.props.history.push("/xxx");
   };
 
   render() {
