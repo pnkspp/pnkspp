@@ -41,26 +41,24 @@ function Navbar() {
   ];
 
   return (
-    <>
-      <nav className="navbar">
-        <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
-            PNKSPP <i className="fab fa-accusoft"></i>
-          </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-typo3" : "fas fa-bars"} />
-          </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}></ul>
-          {menuData.map((item) => (
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={item.onClick}>
-                {item.title}
-              </Link>
-            </li>
-          ))}
+    <nav className="navbar">
+      <div className="navbar-container">
+        <Link to="/" className="navbar-logo">
+          PNKSPP <i className="fab fa-accusoft"></i>
+        </Link>
+        <div className="menu-icon" onClick={handleClick}>
+          <i className={click ? "fas fa-typo3" : "fas fa-bars"} />
         </div>
-      </nav>
-    </>
+        <ul className={click ? "nav-menu active" : "nav-menu"}></ul>
+        {menuData.map((item) => (
+          <li className="nav-item">
+            <Link to="/" className="nav-links" onClick={item.onClick}>
+              {item.title}
+            </Link>
+          </li>
+        ))}
+      </div>
+    </nav>
   );
 }
 
