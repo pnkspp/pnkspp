@@ -44,7 +44,6 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          s
           <Link to="/" className="navbar-logo">
             PNKSPP <i className="fab fa-accusoft"></i>
           </Link>
